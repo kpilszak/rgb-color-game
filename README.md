@@ -1,4 +1,4 @@
-# RGB Color Game
+<h1 align="right">RGB Color Game</h1><br>
 
 ## Table of contents
 * [General info](#general-info)
