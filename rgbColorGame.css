@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(237, 234, 232);
+    margin: 0;
+    font-family: 'Bungee Inline', cursive;
+}
+
+#siteTitle {
+    background-color: rgb(139, 176, 178);
+    margin: 0;
+    padding: 10px;
+    color: rgb(255, 252, 250);
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+    font-variant: small-caps;
+    letter-spacing: 5px;
+}
+
+.white {
+    background-color: rgb(255, 252, 250);
+    margin: 0; 
+    color: rgb(139, 176, 178);
+}
+
+#menu {
+    padding: 5px;
+    text-align: center;
+    font-size: 1.1vw;
+    letter-spacing: 2px;
+}
+
+#color {
+    padding: 8px;
+    text-align: center;
+    font-size: 2.5vw;
+    letter-spacing: 4px;
+}
