@@ -8,7 +8,7 @@ var colors = [
 ];
 
 var squares = document.getElementsByClassName("square");
-var pickedColor = colors[2];
+var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
 colorDisplay.textContent = pickedColor;
 var message = document.getElementById("message");
@@ -33,4 +33,9 @@ function adjustColors(color) {
     }
     var siteTitle = document.getElementById("siteTitle");
     siteTitle.style.backgroundColor = color;
+}
+
+function pickColor() {
+    var random = Math.floor(Math.random() * colors.length);
+    return colors[random];
 }
