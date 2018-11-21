@@ -18,6 +18,8 @@ for (var i = 0; i < squares.length; i++) {
         var clickedColor = this.style.backgroundColor;
         if(clickedColor === pickedColor) {
             alert("Correct!");
+        } else {
+            this.style.backgroundColor = "rgb(237, 234, 232)";
         }
-    })
+    });
 }
