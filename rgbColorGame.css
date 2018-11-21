@@ -10,7 +10,7 @@ body {
     padding: 10px;
     color: rgb(255, 252, 250);
     text-align: center;
-    font-size: 3vw;
+    font-size: 3rem;
     font-weight: bold;
     font-variant: small-caps;
     letter-spacing: 5px;
@@ -25,13 +25,27 @@ body {
 #menu {
     padding: 5px;
     text-align: center;
-    font-size: 1.1vw;
+    font-size: 1.1rem;
     letter-spacing: 2px;
 }
 
 #color {
     padding: 8px;
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 2.5rem;
     letter-spacing: 4px;
+}
+
+#squareColors {
+    max-width: 720px;
+    margin: 30px auto;
+}
+
+.square {
+    width: 30%;
+    margin: 1.667%;
+    padding-bottom: 30%;
+    border-radius: 10%;
+    float: left;
+    background-color: black;
 }
