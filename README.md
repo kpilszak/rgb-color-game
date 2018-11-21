@@ -26,4 +26,4 @@ Recommended minimal browser versions:
 * Opera 55
 
 ## Setup
-To run this project, visit <a href="https://kpilszak.github.io/rgb-color-game/" target="_blank">https://kpilszak.github.io/rgb-color-game/</a>
+To run this project, open this in a new tab: <a href="https://kpilszak.github.io/rgb-color-game/">https://kpilszak.github.io/rgb-color-game/</a>
