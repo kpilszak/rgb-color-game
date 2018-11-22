@@ -31,7 +31,6 @@ body {
 
 .button {
     background-color: rgb(237, 234, 232);
-    margin: 2px 120px 0px auto;
     border: none;
     border-radius: 10%;
     padding: 8px;
@@ -41,6 +40,15 @@ body {
     font-size: 1.1rem;
     letter-spacing: 2px;
     text-decoration: none;
+}
+
+#newGame {
+    margin: 2px 120px 0px auto;
+}
+
+.modeOn {
+    background-color: rgb(139, 176, 178);
+    color: rgb(255, 252, 250);    
 }
 
 #colorDisplay {
