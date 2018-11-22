@@ -1,10 +1,21 @@
 var colors = randomizeColors(6);
-
 var squares = document.getElementsByClassName("square");
 var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
 colorDisplay.textContent = pickedColor;
+var siteTitle = document.getElementById("siteTitle");
 var message = document.getElementById("message");
+var newGameButton = document.getElementById("newGame");
+newGameButton.addEventListener("click", function(){
+    colors = randomizeColors(6);
+    pickedColor = pickColor();
+    colorDisplay.textContent = pickedColor;
+    for (var i = 0; i < squares.length; i++) {
+        squares[i].style.backgroundColor = colors[i];
+    }
+    siteTitle.style.backgroundColor = "rgb(139, 176, 178)";
+    message.textContent = "";
+});
 
 for (var i = 0; i < squares.length; i++) {
     squares[i].style.backgroundColor = colors[i];
@@ -24,7 +35,6 @@ function adjustColors(color) {
     for (var i = 0; i < squares.length; i++) {
         squares[i].style.backgroundColor = color;
     }
-    var siteTitle = document.getElementById("siteTitle");
     siteTitle.style.backgroundColor = color;
 }
 
