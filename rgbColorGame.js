@@ -37,6 +37,8 @@ easyButton.addEventListener("click", function(){
             squares[i].style.display = "none";
         }
     }
+    siteTitle.style.backgroundColor = "rgb(139, 176, 178)";
+    message.textContent = "";
 });
 
 hardButton.addEventListener("click", function(){
@@ -50,6 +52,8 @@ hardButton.addEventListener("click", function(){
         squares[i].style.backgroundColor = colors[i];
         squares[i].style.display = "block";
     }
+    siteTitle.style.backgroundColor = "rgb(139, 176, 178)";
+    message.textContent = "";
 });
 
 for (var i = 0; i < squares.length; i++) {
