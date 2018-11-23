@@ -27,3 +27,6 @@ Recommended minimal browser versions:
 
 ## Setup
 To run this project, open this in a new tab: <a href="https://kpilszak.github.io/rgb-color-game/">https://kpilszak.github.io/rgb-color-game/</a>
+
+## Sources
+This project is inspired by Colt Steele course "The Web Developer Bootcamp" from Udemy.
