@@ -7,8 +7,8 @@
 
 ## General info
 This project is a browser game.  
-The main purpose of this play is to guess which color is described in RGB values.
-RGB(#, #, #) stands for red, green and blue saturation from 0 to 255.
+The main purpose of this play is to guess which color is described in RGB values.  
+RGB(#, #, #) stands for red, green and blue saturation from 0 to 255.  
 The player is being shown 3 or 6 (depending on the mode) squares, from which he is suppose to chose the right one.  
 RGB values are randomized.
 	
