@@ -29,7 +29,7 @@ body {
     letter-spacing: 2px;
 }
 
-.button {
+button {
     background-color: rgb(237, 234, 232);
     border: none;
     border-radius: 10%;
