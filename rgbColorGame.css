@@ -29,6 +29,11 @@ body {
     letter-spacing: 2px;
 }
 
+#message {
+    display: inline-block;
+    width: 15%;
+}
+
 button {
     background-color: rgb(237, 234, 232);
     border: none;
@@ -40,10 +45,6 @@ button {
     font-size: 1.1vw;
     letter-spacing: 2px;
     text-decoration: none;
-}
-
-#newGame {
-    margin: 2px 120px 0px auto;
 }
 
 .modeOn {

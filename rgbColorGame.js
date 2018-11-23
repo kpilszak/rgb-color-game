@@ -12,7 +12,6 @@ var hardButton = document.getElementById("hard");
 
 
 newGameButton.addEventListener("click", function(){
-    newGameButton.style.margin = "2px 120px 0px auto";
     colors = randomizeColors(numOfSquares);
     pickedColor = pickColor();
     colorDisplay.textContent = pickedColor;
@@ -59,7 +58,6 @@ hardButton.addEventListener("click", function(){
 for (var i = 0; i < squares.length; i++) {
     squares[i].style.backgroundColor = colors[i];
     squares[i].addEventListener("click", function(){
-        newGameButton.style.margin = "2px 10px 0px auto";
         var clickedColor = this.style.backgroundColor;
         if(clickedColor === pickedColor) {
             message.textContent = "You are right!";
