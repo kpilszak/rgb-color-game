@@ -71,7 +71,7 @@ button:hover {
 
 .square {
     width: 30%;
-    min-width: 60px;
+    min-width: 40px;
     margin: 1.667%;
     padding-bottom: 30%;
     border-radius: 10%;
