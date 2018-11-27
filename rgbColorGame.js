@@ -1,15 +1,12 @@
 var numOfSquares = 6;
-var colors = randomizeColors(numOfSquares);
+var colors = [];
+var pickedColor;
 var squares = document.getElementsByClassName("square");
-var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
-colorDisplay.textContent = pickedColor;
 var siteTitle = document.getElementById("siteTitle");
 var message = document.getElementById("message");
 var newGameButton = document.getElementById("newGame");
-var easyButton = document.getElementById("easy");
-var hardButton = document.getElementById("hard");
-
+var modeButton = document.querySelectorAll("#easy, #hard");
 
 newGameButton.addEventListener("click", function(){
     colors = randomizeColors(numOfSquares);
