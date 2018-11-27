@@ -40,6 +40,21 @@ function drawSquares(){
     }
 }
 
+function addIfWinChecking(){
+    for (var i = 0; i < squares.length; i++) {
+        squares[i].addEventListener("click", function(){
+            var clickedColor = this.style.backgroundColor;
+            if(clickedColor === pickedColor) {
+                message.textContent = "You are right!";
+                adjustColorsWhenCorrectlyGuessed(clickedColor);
+            } else {
+                this.style.backgroundColor = "rgb(237, 234, 232)";
+                message.textContent = "Try again";
+            }
+        });
+    }
+}
+
 newGameButton.addEventListener("click", function(){
     colors = randomizeColors(numOfSquares);
     pickedColor = pickColor();
