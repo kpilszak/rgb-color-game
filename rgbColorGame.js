@@ -8,6 +8,15 @@ var message = document.getElementById("message");
 var newGameButton = document.getElementById("newGame");
 var modeButton = document.querySelectorAll("#easy, #hard");
 
+init();
+
+function init(){
+    setMode();
+    drawSquares();
+    addIfWinChecking();
+    reset();
+}
+
 newGameButton.addEventListener("click", function(){
     colors = randomizeColors(numOfSquares);
     pickedColor = pickColor();
