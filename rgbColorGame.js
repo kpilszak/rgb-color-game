@@ -17,6 +17,18 @@ function init(){
     reset();
 }
 
+function setMode(){
+    for(var i = 0; i < modeButton.length; i++){
+        modeButton[i].addEventListener("click", function(){
+            modeButton[0].classList.remove("modeOn");
+            modeButton[1].classList.remove("modeOn");
+            this.classList.add("modeOn");
+            this.textContent == "HARD" ? numOfSquares = 6 : numOfSquares = 3;
+            reset();
+        });
+    }
+}
+
 newGameButton.addEventListener("click", function(){
     colors = randomizeColors(numOfSquares);
     pickedColor = pickColor();
