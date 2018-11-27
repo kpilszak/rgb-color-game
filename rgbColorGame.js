@@ -65,63 +65,11 @@ function reset(){
     drawSquares();
 }
 
-easyButton.addEventListener("click", function(){
-    easyButton.classList.add("modeOn");
-    hardButton.classList.remove("modeOn");
-    numOfSquares = 3;
-    colors = randomizeColors(numOfSquares);
-    pickedColor = pickColor();
-    colorDisplay.textContent = pickedColor;
-    for (var i = 0; i < squares.length; i++) {
-        if (colors[i]) {
-            squares[i].style.backgroundColor = colors[i];
-        } else {
-            squares[i].style.display = "none";
-        }
-    }
-    siteTitle.style.backgroundColor = "rgb(139, 176, 178)";
-    message.textContent = "";
-});
-
-hardButton.addEventListener("click", function(){
-    easyButton.classList.remove("modeOn");
-    hardButton.classList.add("modeOn");
-    numOfSquares = 6;
-    colors = randomizeColors(numOfSquares);
-    pickedColor = pickColor();
-    colorDisplay.textContent = pickedColor;
-    for (var i = 0; i < squares.length; i++) {
-        squares[i].style.backgroundColor = colors[i];
-        squares[i].style.display = "block";
-    }
-    siteTitle.style.backgroundColor = "rgb(139, 176, 178)";
-    message.textContent = "";
-});
-
-for (var i = 0; i < squares.length; i++) {
-    squares[i].style.backgroundColor = colors[i];
-    squares[i].addEventListener("click", function(){
-        var clickedColor = this.style.backgroundColor;
-        if(clickedColor === pickedColor) {
-            message.textContent = "You are right!";
-            adjustColors(clickedColor);
-        } else {
-            this.style.backgroundColor = "rgb(237, 234, 232)";
-            message.textContent = "Try again";
-        }
-    });
-}
-
-function adjustColors(color) {
+function adjustColorsWhenCorrectlyGuessed(color) {
     for (var i = 0; i < squares.length; i++) {
         squares[i].style.backgroundColor = color;
     }
     siteTitle.style.backgroundColor = color;
-}
-
-function pickColor() {
-    var random = Math.floor(Math.random() * colors.length);
-    return colors[random];
 }
 
 function randomizeColors(mode) {
@@ -130,6 +78,17 @@ function randomizeColors(mode) {
         rgbColors.push(randomizeRGB());
     }
     return rgbColors;
+}
+
+function pickColorToGuess() {
+    var random = Math.floor(Math.random() * colors.length);
+    return colors[random];
+}
+
+function setBackground(){
+    siteTitle.style.backgroundColor = "rgb(139, 176, 178)";
+    message.textContent = "";
+    colorDisplay.textContent = pickedColor;
 }
 
 function randomizeRGB() {
