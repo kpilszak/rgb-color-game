@@ -55,6 +55,13 @@ function addIfWinChecking(){
     }
 }
 
+function reset(){
+    colors = randomizeColors(numOfSquares);
+    pickedColor = pickColorToGuess();
+    setBackground();
+    drawSquares();
+}
+
 newGameButton.addEventListener("click", function(){
     colors = randomizeColors(numOfSquares);
     pickedColor = pickColor();
