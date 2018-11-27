@@ -6,6 +6,9 @@ var colorDisplay = document.getElementById("colorDisplay");
 var siteTitle = document.getElementById("siteTitle");
 var message = document.getElementById("message");
 var newGameButton = document.getElementById("newGame");
+newGameButton.addEventListener("click", function(){
+    reset();
+});
 var modeButton = document.querySelectorAll("#easy, #hard");
 
 init();
@@ -61,17 +64,6 @@ function reset(){
     setBackground();
     drawSquares();
 }
-
-newGameButton.addEventListener("click", function(){
-    colors = randomizeColors(numOfSquares);
-    pickedColor = pickColor();
-    colorDisplay.textContent = pickedColor;
-    for (var i = 0; i < squares.length; i++) {
-        squares[i].style.backgroundColor = colors[i];
-    }
-    siteTitle.style.backgroundColor = "rgb(139, 176, 178)";
-    message.textContent = "";
-});
 
 easyButton.addEventListener("click", function(){
     easyButton.classList.add("modeOn");
