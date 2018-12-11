@@ -16,7 +16,7 @@ RGB values are randomized.
 Project is created with:
 * HTML5
 * CSS3
-* JavaScript ES6
+* JavaScript  
 
 ## Supports
 Recommended minimal browser versions:
